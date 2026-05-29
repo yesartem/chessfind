@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #050505;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #F4F5F1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Phone shell on desktop */
+.phone-shell {
+  width: 390px;
+  height: 844px;
+  position: relative;
+  overflow: hidden;
+  background: #0A0A0A;
+  flex-shrink: 0;
+}
+
+@media (max-width: 430px) {
+  .phone-shell {
+    width: 100vw;
+    height: 100dvh;
+  }
+}
+
+/* Screen wrapper */
+.screen {
+  width: 100%;
+  height: 100%;
+  background: #0A0A0A;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.screen::-webkit-scrollbar { display: none; }
+
+/* Scrollable content above fixed tab bar */
+.screen-content {
+  padding-bottom: 80px;
+}
+
+/* Typography */
+.font-display { font-family: 'Bricolage Grotesque', sans-serif; }
+.font-mono    { font-family: 'Spline Sans Mono', monospace; }
+
+/* Active press state */
+.pressable {
+  transition: opacity 0.12s, transform 0.12s;
+  cursor: pointer;
+}
+.pressable:active {
+  opacity: 0.75;
+  transform: scale(0.98);
+}
+
+/* Toggle switch */
+.toggle {
+  width: 51px;
+  height: 31px;
+  border-radius: 9999px;
+  background: #262826;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.toggle.on { background: #C6F24E; }
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+.toggle.on::after { transform: translateX(20px); }
+
+/* Scrollable screen animation */
+.screen-enter {
+  animation: fade-in 0.25s ease-out both;
+}
