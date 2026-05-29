@@ -30,7 +30,7 @@ export default function TabBar({ active }) {
 
   const tabs = [
     { id: 'explore',  label: 'Explore',  Icon: ExploreIcon,  path: '/home' },
-    { id: 'matches',  label: 'Matches',  Icon: MatchesIcon,  path: '/home' },
+    { id: 'matches',  label: 'My Games', Icon: MatchesIcon,  path: '/home' },
     { id: 'fab',      label: '',         Icon: null,         path: '/pt/type' },
     { id: 'events',   label: 'Events',   Icon: EventsIcon,   path: '/home' },
     { id: 'profile',  label: 'Profile',  Icon: ProfileIcon,  path: '/profile' },
