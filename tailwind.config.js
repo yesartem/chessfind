@@ -17,8 +17,8 @@ export default {
         border:   '#262826',
       },
       fontFamily: {
-        display: ['"Bricolage Grotesque"', 'sans-serif'],
-        mono:    ['"Spline Sans Mono"', 'monospace'],
+        display: ['"Albert Sans"', 'sans-serif'],
+        mono:    ['"Work Sans"', 'sans-serif'],
       },
       borderRadius: {
         btn:  '12px',

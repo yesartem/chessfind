@@ -15,7 +15,7 @@ html, body, #root {
 }
 
 body {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Albert Sans', sans-serif;
   color: #F4F5F1;
   -webkit-font-smoothing: antialiased;
 }
@@ -54,8 +54,8 @@ body {
 }
 
 /* Typography */
-.font-display { font-family: 'Bricolage Grotesque', sans-serif; }
-.font-mono    { font-family: 'Spline Sans Mono', monospace; }
+.font-display { font-family: 'Albert Sans', sans-serif; }
+.font-mono    { font-family: 'Work Sans', sans-serif; }
 
 /* Active press state */
 .pressable {
