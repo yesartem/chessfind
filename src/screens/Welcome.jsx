@@ -5,29 +5,16 @@ export default function Welcome() {
   const navigate = useNavigate()
   return (
     <div className="screen screen-enter flex flex-col" style={{ background: '#0A0A0A' }}>
-      {/* Hero ellipse */}
-      <div className="flex-1 flex items-center justify-center" style={{ minHeight: 240 }}>
-        <div
-          className="w-72 h-48 rounded-[50%]"
-          style={{ background: 'radial-gradient(ellipse at center, #1a2a0a 0%, #0A0A0A 80%)' }}
-        />
+      {/* Logo — top, full width */}
+      <div className="px-5 pt-10">
+        <img src="/logo.png" alt="Chessfind" style={{ width: '100%' }} />
       </div>
 
-      {/* Content */}
-      <div className="px-5 pb-12 flex flex-col gap-5">
-        {/* Logo row */}
-        <div
-          className="flex items-center justify-center px-4 py-3 rounded-hero"
-          style={{ background: '#C6F24E' }}
-        >
-          <img
-            src="/logo.png"
-            alt="Chessfind"
-            style={{ height: 28, filter: 'brightness(0)' }}
-          />
-        </div>
+      {/* Spacer */}
+      <div className="flex-1" />
 
-        {/* Headline */}
+      {/* Bottom content */}
+      <div className="px-5 pb-12 flex flex-col gap-5">
         <div>
           <h1 className="font-display font-extrabold text-[38px] leading-[1.05] text-primary mb-3">
             Find where to<br />play chess.
@@ -37,7 +24,6 @@ export default function Welcome() {
           </p>
         </div>
 
-        {/* Actions */}
         <div className="flex flex-col gap-3 mt-2">
           <button
             onClick={() => navigate('/connect')}
