@@ -4,17 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        page:     '#0A0A0A',
-        card:     '#121312',
-        raised:   '#1A1C1A',
-        accent:   '#C6F24E',
-        'accent-tint': '#141C0C',
-        primary:  '#F4F5F1',
-        secondary:'#8B8F86',
-        tertiary: '#5A5E57',
-        danger:   '#FF5247',
-        'danger-tint': '#2A0D0A',
-        border:   '#262826',
+        page:     '#FFE157',
+        card:     '#FFFFFF',
+        raised:   '#FFFFFF',
+        accent:   '#1638E0',
+        'accent-tint': '#E8ECFC',
+        primary:  '#1A1A1A',
+        secondary:'#7A7A7A',
+        tertiary: '#B0B0A8',
+        danger:   '#D32F1F',
+        'danger-tint': '#FCE8E5',
+        border:   '#E8DC5C',
       },
       fontFamily: {
         display: ['"Albert Sans"', 'sans-serif'],
